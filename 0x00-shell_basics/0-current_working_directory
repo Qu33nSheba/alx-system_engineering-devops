@@ -1,2 +1,2 @@
-#!/bin/bash $ realpath ./0-current_working_directory
-/tmp/correction/7265786592520553821191596443167729854491_5/205/345716/0x00-shell_basics
+#!/bin/bash
+echo "$(cd "$(dirname -- "$1")" >/dev/null; pwd -P)/$(basename -- "$1")"
